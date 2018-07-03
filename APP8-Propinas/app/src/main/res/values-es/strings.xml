@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora propinas</string>
+    <string name="activity_main_ok">Ok</string>
+    <string name="activity_main_roundout">Redondear</string>
+    <string name="activity_main_account">Cuenta</string>
+    <string name="activity_main_total">Total</string>
+    <string name="activity_main_tip_porcentage">% propina</string>
+    <string name="activity_main_tip">Propina</string>
+    <string name="activity_main_diners_number">Numero Comensales</string>
+    <string name="activity_mian_diner_total">Total comensal</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_5dp"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/lblNameItem"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="@dimen/lado_cubo"
+        android:layout_weight="0.75"
+        android:background="@drawable/ic_add_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/lblCantItem"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="@dimen/lado_cubo"
+        android:layout_weight="0.75"
+        android:background="@drawable/ic_remove_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:gravity="right" />
+</LinearLayout>

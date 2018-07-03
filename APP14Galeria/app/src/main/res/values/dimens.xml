@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_text_fragment_detail">8dp</dimen>
+    <dimen name="textDetail">15sp</dimen>
+</resources>

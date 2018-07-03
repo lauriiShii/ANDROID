@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">EXAMEN-11-12-2017</string>
+    <string name="hora">0:00</string>
+    <string name="oneofother">%1$d of %2$d</string>
+    <string name="activity_main_mnuSettings">Settings</string>
+    <string name="activity_main_imgHeader">Header image</string>
+    <string name="activity_main_title">Title</string>
+    <string name="add_answer">Add answer...</string>
+    <string name="name_bot">Name bot ...</string>
+</resources>

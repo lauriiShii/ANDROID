@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frgGame"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="0dp"
+android:paddingLeft="0dp"
+android:paddingRight="0dp"
+android:paddingTop="16dp"
+tools:context="com.android.lauracalvente.app4_poketri.Fragment.questFragment">
+
+<Button
+    android:id="@+id/btnAnswer3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/btnAnswer2"
+    android:layout_alignStart="@+id/btnAnswer2"
+    android:layout_below="@+id/btnAnswer2"
+    android:layout_marginTop="18dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:text="@string/fragment_game_answer_3" />
+
+<Button
+    android:id="@+id/btnAnswer4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/btnAnswer3"
+    android:layout_alignRight="@+id/btnAnswer3"
+    android:layout_below="@+id/btnAnswer3"
+    android:layout_marginTop="18dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:text="@string/fragment_game_answer_4" />
+
+<Button
+    android:id="@+id/btnAnswer2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/btnAnswer1"
+    android:layout_alignStart="@+id/btnAnswer1"
+    android:layout_below="@+id/btnAnswer1"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:text="@string/fragment_game_answer_2" />
+
+<Button
+    android:id="@+id/btnAnswer1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblQuest"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="43dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:text="@string/fragment_game_answer_1" />
+
+<Button
+    android:id="@+id/btnNext"
+    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:background="@color/fondo"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:text="@string/fragment_game_next"
+    android:visibility="invisible" />
+
+<TextView
+    android:id="@+id/lblQuest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="58dp"
+    android:background="@drawable/preguntacustom"
+    android:text="@string/fragment_game_quest"
+    android:textAlignment="center"
+    android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnPlay"
+        android:visibility="gone"
+        android:max="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+

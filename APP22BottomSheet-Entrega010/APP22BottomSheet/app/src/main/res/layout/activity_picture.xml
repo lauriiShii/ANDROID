@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eclip.app22_bottomsheet.pictureActivity.PictureActivity">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgUser"
+        android:scaleType="centerCrop"
+        tools:showIn="@layout/activity_main" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/translucent_grey"
+        android:padding="@dimen/activity_main_bottom_sheet_rlPanel_padding"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/activity_main_bottom_sheet_rlPanel_peekHeight"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        tools:ignore="Overdraw">
+
+        <TextView
+            android:id="@+id/lblName"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imgDetail"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/lblTlf"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblName"
+            android:layout_toStartOf="@+id/imgDetail"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lblTlf"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+
+        <TextView
+            android:id="@+id/lblImg"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblTlf"
+            android:padding="@dimen/activity_main_bottom_sheet_rlPanel_padding"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

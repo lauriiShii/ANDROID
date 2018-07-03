@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Delete"
+        android:id="@+id/mnu_Delete"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_delete"/>
+    <item
+        android:title="Copy"
+        android:id="@+id/mnu_Copy"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_dialog_dialer"/>
+    <item
+        android:title="favorito"
+        android:id="@+id/mnu_favorito"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/btn_star_big_off"/>
+</menu>

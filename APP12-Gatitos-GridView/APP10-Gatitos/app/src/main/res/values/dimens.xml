@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cat_name_padding">6dp</dimen>
+    <dimen name="cat_name_margin">8dp</dimen>
+    <dimen name="marginEnd_lbltxtName">8dp</dimen>
+    <dimen name="marginStard_lbltxtName">8dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="activity_main_heigh_vertical_imgCat">270dp</dimen>
+    <dimen name="activity_main_lblEmptyView_drawablePadding">10dp</dimen>
+    <dimen name="user_height">120dp</dimen>
+    <dimen name="user_image_width">150dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="height_image_avatar">102dp</dimen>
+</resources>

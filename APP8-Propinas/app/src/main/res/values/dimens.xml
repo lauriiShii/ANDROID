@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_main_8">8dp</dimen>
+    <dimen name="activity_main_2">2dp</dimen>
+    <dimen name="activity_main_0">0dp</dimen>
+    <dimen name="activity_main_200">200dp</dimen>
+    <dimen name="activity_main_32">32dp</dimen>
+    <dimen name="activity_main_283">283dp</dimen>
+    <dimen name="activity_main_210">210dp</dimen>
+</resources>

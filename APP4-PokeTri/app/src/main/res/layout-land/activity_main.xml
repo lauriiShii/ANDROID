@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.android.lauracalvente.app4_poketri.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1.5">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frgDetails"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_marginBottom="@dimen/activity_main_details"
+        android:layout_marginTop="@dimen/activity_main_details"
+        android:layout_marginRight="@dimen/activity_main_details"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        android:background="@drawable/preguntacustom"
+        android:visibility="gone">
+    </FrameLayout>
+
+</LinearLayout>

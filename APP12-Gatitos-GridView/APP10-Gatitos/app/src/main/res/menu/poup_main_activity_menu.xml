@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mmu_call"
+        android:title="call"/>
+    <item android:id="@+id/mmu_map"
+        android:title="visit map"/>
+    <item android:id="@+id/mmu_email"
+        android:title="send email"/>
+    <item android:id="@+id/mmu_web"
+        android:title="visit web"/>
+</menu>

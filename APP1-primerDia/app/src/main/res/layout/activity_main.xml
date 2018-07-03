@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.android.lauracalvente.app1_primerdia.MainActivity">
+
+    <TextView
+        android:id="@+id/lblHola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/main_activity_lblhola" />
+
+    <TextView
+        android:id="@+id/lblBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_main_margin"
+        android:text="@string/main_activity_lblbien"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/chkInsult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_main_margin"
+        android:text="@string/activity_main_chkinsultar" />
+
+    <Button
+        android:id="@+id/btnSaludar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_main_margin"
+        android:text="@string/main_activity_btnsaludar" />
+
+</LinearLayout>

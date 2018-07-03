@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Periodico</string>
+    <string name="lista_vacia">La Lista de periodicos esta vacía</string>
+    <string name="eliminar_mensaje">Deseas eliminar este periodico de la lista</string>
+    <string name="action_settings">Preferencias</string>
+    <string name="nombre">Nombre</string>
+    <string name="periodico">Periodico</string>
+    <string name="url">URL</string>
+    <string name="icono">Icono</string>
+    <string name="label_periodico">Periodico</string>
+    <string name="label_preferencias">Preferencias</string>
+    <string name="error_campos_necesarios">Los campos Nombre y URL son obligatorios</string>
+    <string name="no_web">No ha sido posible abrir la web :(</string>
+    <string name="no_url">NO URL</string>
+    <string name="pref_borrar">PrefBorrar</string>
+    <string name="pref_espacio">PrefEspacio</string>
+    <string name="pref1">Preguntar antes de borrar</string>
+    <string name="pref2">Sustituir 0 por espacio</string>
+</resources>

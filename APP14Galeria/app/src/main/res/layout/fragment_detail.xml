@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.eclip.app14_galeria.mainDetails.DetailFragment">
+
+<ImageView
+    android:id="@+id/imgImage"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_photo_camera_purple_24dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/lblInformation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorTextDetail"
+    android:textSize="@dimen/textDetail"
+    android:text="@string/select_an_artwork"
+    android:typeface="sans"
+    android:textStyle="bold|italic"
+    android:background="@drawable/ic_label_pink_24dp"
+    android:padding="@dimen/margin_text_fragment_detail"
+    android:layout_marginBottom="@dimen/margin_text_fragment_detail"
+    android:layout_marginEnd="@dimen/margin_text_fragment_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

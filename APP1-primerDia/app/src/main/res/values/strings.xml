@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">APP1-primerDia</string>
+    <string name="main_activity_lblhola">Hola</string>
+    <string name="main_activity_lblbien">No me caes bien!</string>
+    <string name="main_activity_btnsaludar">Saludar</string>
+    <string name="main_activity_saludo">Buenos Dias</string>
+    <string name="activity_main_chkinsultar">Insultar</string>
+    <string name="main_activity_insult">Me cago en tu cara entera</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.android.lauracalvente.app6_intent_parcelable.Activitys.MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATOS ALUMNO" />
+
+
+    <TextView
+        android:id="@+id/txtDatosNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(No disponibles)" />
+
+    <TextView
+        android:id="@+id/txtDatosEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="" />
+
+    <Button
+        android:id="@+id/btnSolicitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitar" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Usuarios</string>
+    <string name="activity_main_Name">Nombre</string>
+    <string name="activity_main_hint_Name">(Nombre)</string>
+    <string name="activity_main_hint_web">(Web)</string>
+    <string name="activity_main_web">Web</string>
+    <string name="activity_main_hint_address">(Direccion)</string>
+    <string name="activity_main__address">Direccion</string>
+    <string name="activity_main_hint_phone_number">(Telefono)</string>
+    <string name="activity_main_phone_number">Telefono</string>
+    <string name="activity_main_hint_email">(email)</string>
+    <string name="activity_main_email">Email</string>
+    <string name="name_second_activity">Selecciona un avatar</string>
+    <string name="profile_user">nuevo perfil/cargar perfil</string>
+    <string name="save">Pefil guardado</string>
+    <string name="name_principal_activity">Nuevo perfil usuario</string>
+    <string name="profile_activity_required">obligatorio</string>
+    <string name="profile_activity_error_empty">El nombre, email y numero de telefono es necesario que esten rellenos</string>
+    <string name="procubito">Procubito</string>
+    <string name="activity_main_lblEmptyView">Añade usuarios por favor !!</string>
+    <string name="main_activity_delete">Usuario eliminado</string>
+    <string name="main_activity_undo">Deshacer</string>
+</resources>

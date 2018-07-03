@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FaceCat</string>
+    <string name="title_home">My data</string>
+    <string name="title_dashboard">Picture</string>
+    <string name="title_notifications">About</string>
+
+
+    <string name="fragment_bottomsheet_mnuCall">Call</string>
+    <string name="fragment_bottomsheet_options">Options</string>
+
+    <string name="menubottomsheetfragment_call">Call %1$s</string>
+    <string name="menubottomsheetfragment_send_message">Send message to
+        %1$s</string>
+    <string name="menubottomsheetfragment_see_notes">See notes for %1$s</string>
+
+    <string name="options">Options</string>
+    <string name="name">Name</string>
+
+    <string name="edit">edit</string>
+    <string name="phone">333333333</string>
+    <string name="fragment_bottomsheet_mnuSave">Save</string>
+    <string name="developer">Aplicación desarrollada por: Laura Calvente Domínguez</string>
+    <string name="detail">Detail</string>
+</resources>

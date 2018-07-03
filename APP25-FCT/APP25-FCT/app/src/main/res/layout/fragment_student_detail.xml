@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="da"
+            type="com.example.eclip.app25_fct.mainActivity.Students.StudentDetailFragment" />
+
+        <variable
+            name="student"
+            type="com.example.eclip.app25_fct.bdd.model.Student" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:onTextChanged='@{(charSequence, start, before, count) -> da.onNameChanged(charSequence, start, before, count)}'
+                        android:text="@={student.name}" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/lytNombre">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txtTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="Phone"
+                        android:text="@={student.phone}" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/lytTelefono">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:text="@={student.email}" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/lblBusiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="2dp"
+                    android:gravity="center"
+                    android:text="Business: "
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lytEmail" />
+
+                <Spinner
+                    android:id="@+id/spnEmpresa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/lblBusiness"
+                    app:layout_constraintTop_toBottomOf="@id/lytEmail" />
+
+                <TextView
+                    android:id="@+id/lblTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="2dp"
+                    android:gravity="center"
+                    android:text="Teacher: "
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lblBusiness" />
+
+                <Spinner
+                    android:id="@+id/spnTutor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/lblTeacher"
+                    app:layout_constraintStart_toEndOf="@+id/lblBusiness"
+                    app:layout_constraintTop_toBottomOf="@id/spnEmpresa" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytTelefonoTutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/spnTutor">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txtTelefonoTutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Teacher Phone"
+                        android:inputType="phone"
+                        android:text="@={student.teacherPhone}" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="2dp"
+                    android:gravity="center"
+                    android:text="@string/schedule"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lytTelefonoTutor" />
+
+                <EditText
+                    android:id="@+id/txtHorario"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:focusable="false"
+                    android:onClick="@{(view) -> da.onClickHour(view)}"
+                    android:text="@={student.hour}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@id/lytTelefonoTutor" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+        <!--android:onClick="@{(view) -> da.fabSaveOnClick(view)}"-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:onClick="@{(view) -> da.fabSaveOnClick(view)}"
+            android:visibility="invisible"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_done" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

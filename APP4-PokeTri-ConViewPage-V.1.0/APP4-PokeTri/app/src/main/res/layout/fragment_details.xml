@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.android.lauracalvente.app4_poketri.Fragment.detailsFragment">
+
+    <ImageView
+        android:id="@+id/imgPokemon"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="3" />
+
+    <TextView
+        android:id="@+id/lblDName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:text="@string/fragment_details_name"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/lblDScore"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/lblDName"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="3"
+        android:text="@string/fragment_details_score"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/lblDTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:text="@string/fragment_details_time"
+        android:textAlignment="center" />
+</LinearLayout>
+

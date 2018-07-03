@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eclip.app20_shop_viewpage.shoppingCarActivity.ShoppingCarActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="@dimen/layout_0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/lblTotal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:padding="@dimen/padding_5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstItems"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0dp"
+            android:layout_weight="9.4"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblEmptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/layout_8dp"
+        android:layout_marginEnd="@dimen/layout_8dp"
+        android:layout_marginStart="@dimen/layout_8dp"
+        android:layout_marginTop="@dimen/layout_8dp"
+        android:drawablePadding="@dimen/padding_5dp"
+        android:drawableTop="@drawable/ic_remove_shopping_cart_black_24dp"
+        android:gravity="center"
+        android:text="@string/activity_main_lblEmptyView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+   If I generate the resource for the FAB's attribute, don't work correctly
+   -->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_payment_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

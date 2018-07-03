@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tip Calculate</string>
+    <string name="activity_main_ok">Ok</string>
+    <string name="activity_main_roundout">Round</string>
+    <string name="activity_main_account">Account</string>
+    <string name="activity_main_total">Total</string>
+    <string name="activity_main_tip_porcentage">% tip</string>
+    <string name="activity_main_tip">Tip</string>
+    <string name="activity_main_diners_number">Diners number</string>
+    <string name="activity_mian_diner_total">Diner total</string>
+</resources>

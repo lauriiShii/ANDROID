@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">APP13-PruebaActionMode</string>
+    <string name="delete">delete</string>
+    <string name="oneofother">%1$d of %2$d</string>
+</resources>

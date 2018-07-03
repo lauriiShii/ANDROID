@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Saludar</string>
+    <string name="activity_main_nombre">Nombre</string>
+    <string name="main_activity_noSaludar">No puedo saludar a nadie</string>
+    <string name="main_activity_buenosDias">Buenos dias </string>
+    <string name="main_activity_rellenarText">Escribe un nombre</string>
+    <string name="activity_main_btnsaludar">Saludar</string>
+    <string name="activity_main_chkcon_respeto">Con respeto</string>
+</resources>

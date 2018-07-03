@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopokemon"
+    android:backgroundTint="@color/fondo"
+    android:padding="16dp"
+    tools:context="com.android.lauracalvente.app4_poketri.Fragment.mainFragment">
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/fragment_min_name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_below="@+id/lblName"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/lblError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtName"
+        android:text="@string/fragment_main_write_your_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="10sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_main_what_is_your_name_coach"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imgLogo"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:enabled="false"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnScore"
+        android:layout_alignBottom="@+id/btnScore"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botoncustom"
+        android:text="@string/fragment_main_game"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btnScore"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botoncustom"
+        android:text="@string/fragment_main_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="116dp"
+        android:layout_below="@+id/lblError"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/logopokemon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

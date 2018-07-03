@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Preferencias_Epicas</string>
+    <string name="pref_init_view_key">prefInitialView</string>
+    <string name="pref_def_days">pref_default_days</string>
+</resources>

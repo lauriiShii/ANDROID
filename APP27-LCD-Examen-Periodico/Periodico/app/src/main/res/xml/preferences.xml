@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/pref_borrar"
+        android:title="@string/pref1" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_espacio"
+        android:title="@string/pref2"/>
+
+</PreferenceScreen>

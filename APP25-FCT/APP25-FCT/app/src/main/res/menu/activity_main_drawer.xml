@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Add">
+            <menu>
+
+                <item
+                    android:id="@+id/mmu_new_student"
+                    android:icon="@drawable/ic_person_add_black_24dp"
+                    android:title="@string/mmu_new_student" />
+                <item
+                    android:id="@+id/mmu_new_company"
+                    android:icon="@drawable/ic_business_black_24dp"
+                    android:title="@string/mmu_new_company" />
+
+            </menu>
+        </item>
+        <item android:title="Lists">
+            <menu>
+                <item
+                    android:id="@+id/mmu_list_business"
+                    android:icon="@drawable/ic_business_black_24dp"
+                    android:title="@string/list_business" />
+                <item
+                    android:id="@+id/mmu_list_students"
+                    android:icon="@drawable/ic_people_black_24dp"
+                    android:title="@string/list_students" />
+                <item
+                    android:id="@+id/mmu_list_visit"
+                    android:icon="@drawable/ic_access_time_black_24dp"
+                    android:title="@string/list_visits" />
+            </menu>
+        </item>
+        <item android:title="Options">
+            <menu>
+                <item
+                    android:id="@+id/mmu_tools"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/options_tools" />
+                <item
+                    android:id="@+id/mmu_about"
+                    android:icon="@drawable/ic_info_black_24dp"
+                    android:title="@string/options_about_it" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

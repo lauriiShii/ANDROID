@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Greet</string>
+    <string name="activity_main_nombre">First name</string>
+    <string name="main_activity_noSaludar">I can not say hello to anyone</string>
+    <string name="main_activity_buenosDias">Good morning </string>
+    <string name="main_activity_rellenarText">Enter a name</string>
+    <string name="activity_main_btnsaludar">Greet</string>
+    <string name="activity_main_chkcon_respeto">With respect</string>
+    <string name="activity_main_ime_txtName">Greet</string>
+    <plurals name="main_activity_longClick">
+        <item quantity="one">long click %1$d vez</item>
+        <item quantity="other">long click %1$d veces</item>
+    </plurals>
+</resources>

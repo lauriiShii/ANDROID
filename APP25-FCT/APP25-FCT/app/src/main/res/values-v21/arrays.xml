@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_initial_view_entries">
+        <item>Students List</item>
+        <item>Busines List</item>
+        <item>Next Visits List</item>
+    </string-array>
+    <string-array name="pref_initial_view_values">
+        <item>ListStudentFragment</item>
+        <item>ListBusinesFragment</item>
+        <item>ListNextVisitsFragment</item>
+    </string-array>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.eclip.app25_fct.visitActivity.VisitActivity">
+
+    <data>
+
+        <variable
+            name="visit"
+            type="com.example.eclip.app25_fct.bdd.model.Visit" />
+        <variable
+            name="da"
+            type="com.example.eclip.app25_fct.visitActivity.VisitActivity" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_appbarLayout_height"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:collapsedTitleTextAppearance="@style/ThemeOverlay.AppCompat"
+                app:expandedTitleMarginStart="@dimen/activity_main_collapsingToolbarLayout_titleMarginStart"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/imgHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo2"
+                    android:contentDescription="@string/activity_main_imgHeader"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/sakura3"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="@dimen/activity_main_imgHeader_collapseParallaxMultiplier" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    app:layout_constraintStart_toEndOf="@+id/lblStartHour"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/txtDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="false"
+                    android:text="@={visit.day}"
+                    android:onClick="@{(view) -> da.selectionDay(view)}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgDay"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblStartHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/start_hour"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtDay" />
+
+                <ImageView
+                    android:id="@+id/imgStartHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_menu_recent_history"
+                    app:layout_constraintStart_toEndOf="@id/lblStartHour"
+                    app:layout_constraintTop_toBottomOf="@id/txtDay" />
+
+                <EditText
+                    android:id="@+id/txtStartHour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="false"
+                    android:text="@={visit.startHour}"
+                    android:onClick="@{(view) -> da.selectionStart(view)}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgStartHour"
+                    app:layout_constraintTop_toBottomOf="@id/txtDay" />
+
+                <TextView
+                    android:id="@+id/lblEndHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/end_hour"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtStartHour" />
+
+                <ImageView
+                    android:id="@+id/imgEndHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_menu_recent_history"
+                    app:layout_constraintStart_toEndOf="@id/lblStartHour"
+                    app:layout_constraintTop_toBottomOf="@id/txtStartHour" />
+
+                <EditText
+                    android:id="@+id/txtEndHour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="false"
+                    android:text="@={visit.endHour}"
+                    android:onClick="@{(view) -> da.selectionEnd(view)}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgStartHour"
+                    app:layout_constraintTop_toBottomOf="@id/txtStartHour" />
+
+                <TextView
+                    android:id="@+id/lblObservation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/observation"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintTop_toBottomOf="@id/txtEndHour" />
+
+                <EditText
+                    android:id="@+id/txtObservaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="@={visit.observe}"
+                    app:layout_constraintTop_toBottomOf="@id/lblObservation" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="@{(view) -> da.saveVisit(view)}"
+            android:src="@drawable/ic_done"
+            app:layout_anchor="@+id/scrollView"
+            app:layout_anchorGravity="bottom|right" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
+

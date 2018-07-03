@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="lado_cubo">25dp</dimen>
+    <dimen name="height">0dp</dimen>
+    <dimen name="layout_0dp">0dp</dimen>
+    <dimen name="layout_8dp">8dp</dimen>
+    <dimen name="layout_240dp">240dp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+</resources>

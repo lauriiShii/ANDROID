@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="ListStudentFragment"
+        android:dialogTitle="Initial view"
+        android:entries="@array/pref_initial_view_entries"
+        android:entryValues="@array/pref_initial_view_values"
+        android:key="@string/pref_init_view_key"
+        android:title="Initial view" />
+
+    <EditTextPreference
+        android:inputType="number"
+        android:defaultValue="15"
+        android:dialogTitle="Default days left to the next visit"
+        android:entries="@array/pref_initial_view_entries"
+        android:entryValues="@array/pref_initial_view_values"
+        android:key="@string/pref_def_days"
+        android:title="Default days left to the next visit" />
+
+</PreferenceScreen>

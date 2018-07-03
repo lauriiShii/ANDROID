@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FrikiShop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cest_shopping">Cest Shopping</string>
+    <string name="no_CallBack">must implement fragment callback</string>
+    <string name="activity_main_lblEmptyView">Shopping Cart is empty ... :( !!</string>
+    <string name="compra">La compra ha sido realizada con exito.</string>
+</resources>

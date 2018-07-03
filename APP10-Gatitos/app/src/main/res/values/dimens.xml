@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cat_name_padding">6dp</dimen>
+    <dimen name="cat_name_margin">8dp</dimen>
+    <dimen name="marginEnd_lbltxtName">8dp</dimen>
+    <dimen name="marginStard_lbltxtName">8dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="activity_main_heigh_vertical_imgCat">270dp</dimen>
+</resources>

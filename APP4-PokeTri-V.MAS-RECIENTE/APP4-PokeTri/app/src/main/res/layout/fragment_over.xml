@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frgGame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="16dp"
+    tools:context="com.android.lauracalvente.app4_poketri.Fragment.overFragment">
+
+
+    <Button
+        android:id="@+id/btnGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fragment_play_margin_top_button"
+        android:textSize="@dimen/fragment_play_size_text"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/fragment_play_padding_button"
+        android:text="@string/fragment_over_game_over" />
+
+    <TextView
+        android:id="@+id/lblPlayerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="" />
+
+</RelativeLayout>

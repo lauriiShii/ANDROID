@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_main_details">16dp</dimen>
+    <dimen name="fragment_play_padding_button">25dp</dimen>
+    <dimen name="fragment_play_size_text">50dp</dimen>
+    <dimen name="fragment_play_margin_top_button">130dp</dimen>
+</resources>

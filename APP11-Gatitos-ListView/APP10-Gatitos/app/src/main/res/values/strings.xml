@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="activity_main_Name">Name</string>
+    <string name="activity_main_hint_Name">(Name)</string>
+    <string name="activity_main_hint_web">(Web)</string>
+    <string name="activity_main_web">Web</string>
+    <string name="activity_main_hint_address">(Address)</string>
+    <string name="activity_main__address">Address</string>
+    <string name="activity_main_hint_phone_number">(Phone number)</string>
+    <string name="activity_main_phone_number">Phone number</string>
+    <string name="activity_main_hint_email">(email)</string>
+    <string name="activity_main_email">Email</string>
+    <string name="name_second_activity">Select Avatar</string>
+    <string name="profile_user">new profile/load profile</string>
+    <string name="save">Save profile</string>
+    <string name="name_principal_activity">Profile</string>
+    <string name="profile_activity_required">required</string>
+    <string name="profile_activity_error_empty">The name, email and numbre phone are required fields</string>
+    <string name="procubito">Procubito</string>
+    <string name="activity_main_lblEmptyView">Add User Please !!</string>
+    <string name="main_activity_delete">User Deleted</string>
+    <string name="main_activity_undo">Undo</string>
+</resources>

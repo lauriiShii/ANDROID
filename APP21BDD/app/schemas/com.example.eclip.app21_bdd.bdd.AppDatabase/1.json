@@ -1,0 +1,48 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "941212770751d16f4ff9ce35722b99f1",
+    "entities": [
+      {
+        "tableName": "Alumnos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`alumnoId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "alumnoId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nombre",
+            "columnName": "nombre",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "alumnoId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Alumnos_nombre",
+            "unique": true,
+            "columnNames": [
+              "nombre"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_Alumnos_nombre` ON `${TABLE_NAME}` (`nombre`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"941212770751d16f4ff9ce35722b99f1\")"
+    ]
+  }
+}

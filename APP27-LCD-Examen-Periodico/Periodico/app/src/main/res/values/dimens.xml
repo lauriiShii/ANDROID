@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="activity_main_appbarLayout_height">256dp</dimen>
+    <dimen name="activity_main_collapsingToolbarLayout_titleMarginStart">32dp</dimen>
+    <item name="activity_main_imgHeader_collapseParallaxMultiplier" type="dimen" format="float">
+        0.3
+    </item>
+
+</resources>

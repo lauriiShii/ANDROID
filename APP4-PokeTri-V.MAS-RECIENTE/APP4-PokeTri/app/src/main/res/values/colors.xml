@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#848484</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#2E2E2E</color>
+    <color name="fondo">#ffecb3</color>
+    <color name="transparente">#00000000</color>
+    <color name="seleccionado">#30000000</color>
+    <color name="btnPlay">#FE642E</color>
+
+</resources>
